@@ -1,4 +1,4 @@
-import CategoryItem from "./components/catetory-item/CategoryItem";
+import Directory from "./components/directory/Directory";
 
 function App() {
 
@@ -31,11 +31,7 @@ function App() {
   ]
 
   return (
-    <div className="categories-container">
-      {categories.map((category) => (
-        <CategoryItem key={category.id} category={category} />
-      ))}
-    </div>
+    <Directory categories={categories} />
   );
 }
 
